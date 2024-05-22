@@ -1,6 +1,6 @@
-# CLI Tool
+# Yellow Banana
 
-CLI Tool is a simple Python package that prints a message and an environment variable.
+Yellow Banana is a simple Python package that echoes back a message and an environment variable.
 
 ## Installation
 
