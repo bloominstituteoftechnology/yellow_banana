@@ -61,3 +61,22 @@ yellow_banana "Hello, World!"
 
 ## Publishing
 
+1. Make an account at [Pypi](https://pypi.org/) and set up a token in your environment.
+
+2. Install Twine:
+
+    ```bash
+    pip install twine
+    ```
+
+3. Build the app:
+
+    ```bash
+    python setup.py sdist bdist_wheel
+    ```
+
+4. Upload to PyPI:
+
+    ```bash
+    twine upload dist/*
+    ```
