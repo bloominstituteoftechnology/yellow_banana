@@ -2,6 +2,8 @@
 
 Yellow Banana is a simple Python package that echoes back a message and an environment variable.
 
+Use it as a template for creating PyPI packages. Replace all occurrences of the word "yellow_banana" in the codebase, and rename the `yellow_banana` folder, to whatever you want your package to be called.
+
 ## Installation
 
 Install the package using pip:
