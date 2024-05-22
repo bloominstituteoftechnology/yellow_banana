@@ -1,21 +1,29 @@
 import argparse
-import os
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Print a message using a CLI argument and an environment variable.'
+        description='Interact with APIs using env variables and a prompt.'
     )
     parser.add_argument(
-        'message',
+        'prompt',
         type=str,
-        help='The message to print'
+        help='Prompt for the LLM'
     )
     args = parser.parse_args()
 
-    env_var = os.getenv('MY_ENV_VAR', 'default_value')
+    from openai import OpenAI
 
-    print(f"Message: {args.message}")
-    print(f"Environment Variable: {env_var}")
+    client = OpenAI()
+
+    completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You only discuss yellow bananas."},
+            {"role": "user", "content": args.prompt}
+        ]
+    )
+
+    print(completion.choices[0].message.content)
 
 if __name__ == '__main__':
     main()

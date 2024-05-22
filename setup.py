@@ -9,7 +9,9 @@ setup(
             'yellow_banana=yellow_banana.main:main',
         ],
     },
-    install_requires=[],
+    install_requires=[
+        'openai',
+    ],
     author='Gabriel Cabrejas',
     author_email='gabriel@cabrejas.net',
     description='A simple CLI tool.',

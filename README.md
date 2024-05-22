@@ -1,29 +1,8 @@
 # Yellow Banana
 
-Yellow Banana is a simple Python package that echoes back a message and an environment variable.
+Yellow Banana is as a template for creating PyPI packages.
 
-Use it as a template for creating PyPI packages. Replace all occurrences of the word "yellow_banana" in the codebase, and rename the `yellow_banana` folder, to whatever you want your package to be called.
-
-## Installation
-
-Install the package using pip:
-
-```bash
-pip install yellow_banana
-```
-
-## Usage
-
-```bash
-yellow_banana "Hello, World!"
-```
-
-Make sure to set the environment variable MY_ENV_VAR before running the command.
-
-```bash
-export MY_ENV_VAR="some_value"
-yellow_banana "Hello, World!"
-```
+In order to create your own package, replace all occurrences of the word "yellow_banana" in the codebase, and rename the `yellow_banana` folder, to whatever you want your package to be called.
 
 ## Development
 
@@ -57,13 +36,13 @@ yellow_banana "Hello, World!"
 5. Run the package:
 
     ```bash
-    export MY_ENV_VAR="TestEnvironment"
-    yellow_banana "Lady Gaga"
+    export OPENAI_API_KEY="xyz"
+    yellow_banana "What is the meaning of life?"
     ```
 
 ## Publishing
 
-1. Make an account at [Pypi](https://pypi.org/) and set up a token in your environment.
+1. Make an account at [Pypi](https://pypi.org/) and set up their token in your environment.
 
 2. Install Twine:
 
@@ -82,3 +61,23 @@ yellow_banana "Hello, World!"
     ```bash
     twine upload dist/*
     ```
+
+## Usage of the package
+
+Install the package using pip:
+
+```bash
+pip install yellow_banana
+```
+
+Set your environment variable:
+
+```bash
+export OPENAI_API_KEY ="some_value"
+```
+
+Use the tool:
+
+```bash
+yellow_banana "What is the meaning of life?"
+```
