@@ -70,7 +70,7 @@ Install the package using pip:
 pip install yellow_banana
 ```
 
-Set your environment variable:
+Set whatever environment variables are needed:
 
 ```bash
 export OPENAI_API_KEY ="some_value"
