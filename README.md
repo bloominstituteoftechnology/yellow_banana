@@ -42,7 +42,7 @@ In order to create your own package, replace all occurrences of the word "yellow
 
 ## Publishing
 
-1. Make an account at [Pypi](https://pypi.org/) and set up their token in your environment.
+1. Make an account at [PyPI](https://pypi.org/) and set up their token in your environment.
 
 2. Install Twine:
 
