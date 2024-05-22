@@ -30,7 +30,7 @@ In order to create your own package, replace all occurrences of the word "yellow
 
     ```bash
     python setup.py sdist bdist_wheel
-    pip install dist/yellow_banana-0.1.0-py3-none-any.whl
+    pip install dist/yellow_banana-0.1.1-py3-none-any.whl
     ```
 
 5. Run the package:
